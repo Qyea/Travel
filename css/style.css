@@ -144,7 +144,6 @@ a:hover {
 
 img {
     border: 0; /* 1 */
-    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 /**
@@ -360,42 +359,6 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* aleo-300italic - latin */
-@font-face {
-  font-family: 'Aleo';
-  font-style: italic;
-  font-weight: 300;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* aleo-regular - latin */
-@font-face {
-  font-family: 'Aleo';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* aleo-700 - latin */
-@font-face {
-  font-family: 'Aleo';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* aleo-700italic - latin */
-@font-face {
-  font-family: 'Aleo';
-  font-style: italic;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/aleo-v11-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/aleo-v11-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 html{
     box-sizing: border-box;
 }
@@ -408,7 +371,7 @@ html{
 /*body*/
 body{
     font-family: 'Aleo';
-    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
@@ -417,7 +380,7 @@ body{
 
 /*wrapper*/
 .wrapper{
-    max-width: 1180px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -451,19 +414,41 @@ body{
 }
 
 .header_link{
-    font-family: 'Aleo';
     line-height: 24px;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
     color: white;
     text-decoration: none;
 }
 .header_link:hover,.header_link:focus,.header_link:active{
     opacity: 0.75;
 }
+
+.header_login-button{
+    
+    width: 103px;
+    height: 41px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+}
+.header_login-button:hover, .header_login-button:focus, .header_login-button:active{
+   background: #164A43;
+}
 /*header styles end*/
 
 /*intro styles start*/
 .intro{
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/bg.jpg) no-repeat;
     background-size: cover;
     padding-top: 122px;
@@ -475,7 +460,6 @@ body{
    margin-bottom: 22px;
 
    font-family: 'Aleo';
-   font-style: normal;
    font-weight: 700;
    font-size: 80px;
    line-height: 96px;
@@ -490,3 +474,49 @@ body{
     margin-bottom: 46px;
 }
 /*intro styles end*/
+
+.search-form_info{
+   display: flex; 
+   flex-wrap: wrap;
+}
+.search-form_field{  
+    position: absolute;
+    width: 892px;
+    height: 95px;
+    left: 120px;
+    padding-left: 40px;
+    top: 416px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 18px; 
+    border: 0;
+}
+.search-form_submit{
+    position: absolute;
+    width: 228px;
+    height: 59px;
+    left: 766px;
+    top: 435px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+    font-style: normal;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.search-form_field::placeholder{ 
+   font-family: 'Aleo';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   color: #F2785C; 
+}
+.search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active{
+   background: #164A43;
+}

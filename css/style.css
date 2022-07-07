@@ -378,6 +378,11 @@ body{
     color: #0D606F;  
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 /*wrapper*/
 .wrapper{
     max-width: 1300px;
@@ -399,6 +404,7 @@ body{
     top: 0;
     left: 0;
     width: 100%; 
+    z-index: 1000;
 }
 
 .header_list{
@@ -473,12 +479,12 @@ body{
     line-height: 24px;
     margin-bottom: 46px;
 }
-/*intro styles end*/
 
 .search-form_info{
    display: flex; 
    flex-wrap: wrap;
 }
+
 .search-form_field{  
     position: absolute;
     width: 892px;
@@ -492,6 +498,7 @@ body{
     font-size: 18px; 
     border: 0;
 }
+
 .search-form_submit{
     position: absolute;
     width: 228px;
@@ -509,6 +516,7 @@ body{
     line-height: 32px;
     color: #FFFFFF;
 }
+
 .search-form_field::placeholder{ 
    font-family: 'Aleo';
    font-style: italic;
@@ -517,6 +525,146 @@ body{
    line-height: 29px;
    color: #F2785C; 
 }
+
 .search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active{
    background: #164A43;
 }
+/*intro styles end*/
+
+
+/*steps styles*/
+
+.steps_wrap{
+    max-width: 1177px; 
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+
+.steps_title{
+    position: absolute;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    padding: 80px 283px 40px 283px; 
+    color: #F2785C;
+}
+
+.steps_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    padding: 170px 50px 97px ;
+    text-align: center;
+}
+
+.steps_card{
+    grid-column: span 1;
+}
+
+.steps_card-pic{
+    max-width: 66xp;
+    margin-bottom: 30px;
+}
+
+.steps_card-title{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F; 
+}
+
+/*steps styles end*/
+
+
+/*destinations styles*/
+
+.destinations_wrap{
+    max-width: 1177px; 
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+
+.destinations_title{
+    position: absolute;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    padding: 0px 283px 40px 283px; 
+    color: #F2785C;
+}
+/*destinations styles end*/
+
+
+/*slider styles*/
+.slider{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.slider_middle{
+    position: absolute;
+    width: 1100px;
+    height: 800px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    top: 500px;
+    left:550px;
+    transform: translate(-50%, -50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 550px;
+    bottom: 70px;
+    transform:translate(-50%);
+    display: flex;
+}
+
+.bar{
+    height: 18px;
+    width: 18px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #F2785C;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: all 0.4s ease;    
+}
+
+.bar:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+input[name="radio"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slide{
+    width: 25%;
+    transition: all 0.8s ease;
+}
+.slide img{
+    width: 750%;
+    height: 85%;
+    padding: 0 20px;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -21%;
+}
+#r3:checked ~ .s1{
+    margin-left: -44%;
+}
+/*slider styles end*/

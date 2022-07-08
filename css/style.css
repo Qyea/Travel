@@ -389,6 +389,21 @@ img{
     margin: 0 auto;
 }
 
+.wrapper-full{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-title{
+    position: absolute;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px; 
+    color: #F2785C;
+}
+
 /*header styles start*/
 .header_wrapper{
     display: flex;
@@ -537,19 +552,11 @@ img{
 .steps_wrap{
     max-width: 1177px; 
     margin: 0 auto;
-    background-color: white;
     position: relative;
 }
 
 .steps_title{
-    position: absolute;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 53px;
     padding: 80px 283px 40px 283px; 
-    color: #F2785C;
 }
 
 .steps_cards{
@@ -583,22 +590,17 @@ img{
 
 /*destinations styles*/
 
+.destinations{
+    margin-bottom: 1080px;
+}
 .destinations_wrap{
     max-width: 1177px; 
     margin: 0 auto;
-    background-color: white;
     position: relative;
 }
 
 .destinations_title{
-    position: absolute;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 53px;
-    padding: 0px 283px 40px 283px; 
-    color: #F2785C;
+    padding: 0px 325px 40px; 
 }
 /*destinations styles end*/
 
@@ -616,7 +618,7 @@ img{
     overflow: hidden;
     margin-bottom: 100px;
     top: 500px;
-    left:550px;
+    left:590px;
     transform: translate(-50%, -50%);
 }
 .navigation{
@@ -629,8 +631,8 @@ img{
 }
 
 .bar{
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     margin: 6px;
     cursor: pointer;
     background-color: #F2785C;
@@ -667,4 +669,86 @@ input[name="radio"]{
 #r3:checked ~ .s1{
     margin-left: -44%;
 }
+
+.find_more-button{
+    position: absolute;
+    top: 900px;
+    left: 481px;
+    width: 228px;
+    height: 59px;
+
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+
+    align-items: center;
+    padding: 10px 32px;
+}
+.find_more-button:hover, .find_more-button:focus, .find_more-button:active{
+    background: #164A43;
+}
+/*.find_more-button::after {
+    display: block;
+    position: absolute; 
+    content: '';
+    top: 0;
+    left: 0;
+    background: url(../img/svg/arrow.svg) no-repeat ; 
+}*/
+
 /*slider styles end*/
+
+
+/*stories styles*/
+
+.stories_title{
+    padding: 0px 470px;
+    margin-bottom: 80px;
+}
+.tours{
+  padding-top: 80px;   
+}
+
+.tours_tour{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding-top: 30px;
+}
+
+.tour_title{
+    margin-bottom: 24px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+}
+.tour_desc{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F; 
+}
+.tour_more{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F; 
+}
+
+
+/*stories styles end*/

@@ -11,7 +11,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -690,7 +690,7 @@ input[name="radio"]{
     border: 0;
 
     align-items: center;
-    padding: 10px 32px;
+    padding: 10px 32px 10px 20px;
 }
 .find_more-button:hover, .find_more-button:focus, .find_more-button:active{
     background: #164A43;
@@ -708,10 +708,14 @@ input[name="radio"]{
 
 
 /*stories styles*/
-
+.stories{
+    background: url(/img/bgf.png) no-repeat;
+    background-size: 100%;
+}
 .stories_title{
     padding: 0px 470px;
     margin-bottom: 80px;
+    margin-top: -60px;
 }
 .tours{
   padding-top: 80px;   
@@ -719,12 +723,13 @@ input[name="radio"]{
 
 .tours_tour{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 400px auto auto;
     align-items: center;
     padding-top: 30px;
 }
 
 .tour_title{
+    margin-top: -40px;
     margin-bottom: 24px;
     font-family: 'Aleo';
     font-style: normal;
@@ -732,6 +737,7 @@ input[name="radio"]{
     font-size: 35px;
     line-height: 42px;
     color: #0D606F;
+    margin-left: 40px;
 }
 .tour_desc{
     font-family: 'Aleo';
@@ -740,15 +746,86 @@ input[name="radio"]{
     font-size: 20px;
     line-height: 24px;
     color: #0D606F; 
+    margin-left: 40px;
 }
 .tour_more{
     font-family: 'Aleo';
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 22px;
     line-height: 24px;
     color: #0D606F; 
+    margin-left: 40px;
 }
 
+.see_more-button{
+    position: relative;
+    width: 228px;
+    height: 59px;
+    left: 509px;
+    
+    margin-top: 40px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
 
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+
+    align-items: center;
+    padding: 10px 32px 10px 20px;
+    margin-bottom: 55px;
+}
+.see_more-button:hover, .see_more-button:focus, .see_more-button:active{
+    background: #164A43;
+}
+.arrow{
+    font-size: 40px;
+    font-weight: bold;
+}
 /*stories styles end*/
+.footer_rights{
+    position: absolute;
+    left: 599px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.footer_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-between;
+}
+.footer{
+    width: 100%; 
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footer_item{
+    margin-right: 20px;
+}
+.footer_item:last-child{
+    margin-right: 0;
+
+}
+
+.footer_pic{
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+.footer_link:hover,.footer_link:focus,.footer_link:active{
+    opacity: 0.75;
+}
